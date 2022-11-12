@@ -5,7 +5,7 @@
 #define _QWERTY 1
 #define _LOWER 2
 #define _RAISE 3
-#define _ADJUST 16
+#define _ADJUST 4
 
 enum custom_keycodes {
   DVORAK = SAFE_RANGE,
