@@ -130,16 +130,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
         if (clockwise) {
-            tap_code(KC_VOLU);
+            tap_code(KC_MS_WH_DOWN);
         } else {
-            tap_code(KC_VOLD);
+            tap_code(KC_MS_WH_UP);
         }
     }
     else if (index == 1) {
         if (clockwise) {
-            tap_code(KC_MS_WH_DOWN);
+            // tap_code(KC_AUDIO_VOL_UP);
+            tap_code(KC_KB_VOLUME_UP);
         } else {
-            tap_code(KC_MS_WH_UP);
+            // tap_code(KC_AUDIO_VOL_DOWN);
+            tap_code(KC_KB_VOLUME_DOWN);
         }
     }
     return false;
